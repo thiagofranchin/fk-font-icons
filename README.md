@@ -1,6 +1,6 @@
 # fk Font Icons
 
-[Site](https://fk.github.io/font.icons/) 
+[Site](https://thiagofranchin.github.io/fk-font-icons/) 
 
 ## Download
 

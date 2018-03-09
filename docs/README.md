@@ -1,3 +1,3 @@
 # FK Font Icons
 
-[Site](https://ingaia.github.io/font.icons/)
+[Site](https://thiagofranchin.github.io/fk-font-icons/)
