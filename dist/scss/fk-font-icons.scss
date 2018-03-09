@@ -1,0 +1,74 @@
+@font-face {
+	font-family: "fk-font-icons";
+	src: url('#{$fk-icons-font-path}fk-font-icons.eot');
+	src: url('#{$fk-icons-font-path}fk-font-icons.eot?#iefix') format('eot'),
+		url('#{$fk-icons-font-path}fk-font-icons.woff2') format('woff2'),
+		url('#{$fk-icons-font-path}fk-font-icons.woff') format('woff'),
+		url('#{$fk-icons-font-path}fk-font-icons.ttf') format('truetype'),
+		url('#{$fk-icons-font-path}fk-font-icons.svg#fk-font-icons') format('svg');
+}
+
+@mixin fk-styles {
+	font-family: "fk-font-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%fk {
+	@include fk-styles;
+}
+
+@function fk-char($filename) {
+	$char: "";
+
+	@if $filename == fk {
+		$char: "\E001";
+	}
+	@if $filename == search {
+		$char: "\E002";
+	}
+	@if $filename == github {
+		$char: "\E003";
+	}
+	@if $filename == desktop {
+		$char: "\E004";
+	}
+	@if $filename == chevron-light-up {
+		$char: "\E005";
+	}
+
+	@return $char;
+}
+
+@mixin fk($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %fk;
+		} @else {
+			@include fk-styles;
+		}
+		content: fk-char($filename);
+	}
+}
+
+.fk-fk {
+	@include fk(fk);
+}
+.fk-search {
+	@include fk(search);
+}
+.fk-github {
+	@include fk(github);
+}
+.fk-desktop {
+	@include fk(desktop);
+}
+.fk-chevron-light-up {
+	@include fk(chevron-light-up);
+}

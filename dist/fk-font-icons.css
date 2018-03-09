@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "fk-font-icons";
+	src: url('fonts/fk-font-icons.eot');
+	src: url('fonts/fk-font-icons.eot?#iefix') format('eot'),
+		url('fonts/fk-font-icons.woff2') format('woff2'),
+		url('fonts/fk-font-icons.woff') format('woff'),
+		url('fonts/fk-font-icons.ttf') format('truetype'),
+		url('fonts/fk-font-icons.svg#fk-font-icons') format('svg');
+}
+
+.fk:before {
+	font-family: "fk-font-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.fk-fk:before {
+	content: "\E001";
+}
+
+.fk-search:before {
+	content: "\E002";
+}
+
+.fk-github:before {
+	content: "\E003";
+}
+
+.fk-desktop:before {
+	content: "\E004";
+}
+
+.fk-chevron-light-up:before {
+	content: "\E005";
+}

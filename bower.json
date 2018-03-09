@@ -1,0 +1,25 @@
+{
+  "name": "fk.font.icons",
+  "description": "FK Font Icons",  
+  "authors": [
+    "Thiago Franchin"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "FK", 
+    "ux",
+    "fonts",
+    "icons",
+    "style",
+    "guide",
+    "styleguide"
+  ],
+  "homepage": "https://github.com/ingaia/font.icons",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
