@@ -14,7 +14,7 @@
     "guide",
     "styleguide"
   ],
-  "homepage": "https://github.com/ingaia/font.icons",
+  "homepage": "https://github.com/thiagofranchin/fk-font-icons",
   "ignore": [
     "**/.*",
     "node_modules",
