@@ -1,13 +1,13 @@
-# FK Font Icons
+# TF Font Icons
 
-[Site](https://thiagofranchin.github.io/fk-font-icons/) 
+[Site](https://thiagofranchin.github.io/tf-font-icons/) 
 
 ## Download
 
 ### npm
 
 ```console
-$ npm install fk-font-icons --save
+$ npm install tf-font-icons --save
 ```
 
 ## Instalação

@@ -1,7 +1,7 @@
 {
-  "name": "fk-font-icons",
-  "version": "1.0.2",
-  "description": "Fk Icons",
+  "name": "tf-font-icons",
+  "version": "1.0.3",
+  "description": "TF Icons",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
