@@ -7,9 +7,9 @@ var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var del = require('del');
 var runTimestamp = Math.round(Date.now()/1000);
-var brand = 'fk-font-icons';
+var brand = 'tf-font-icons';
 var fontName = brand;
-var cssClass = 'fk';
+var cssClass = 'tf';
 
 //Deleta a pasta dist
 gulp.task('clean', function() {	
@@ -56,7 +56,7 @@ gulp.task('iconfont-sass', function(){
 	  fontName: fontName,
 	  path: 'scss',
 	  targetPath: '../scss/'+ brand +'.scss',
-	  fontPath: '#{$fk-icons-font-path}',
+	  fontPath: '#{$tf-icons-font-path}',
 	  cssClass: cssClass
 	}))
 	.pipe(iconfont({

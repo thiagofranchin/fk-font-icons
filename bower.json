@@ -1,11 +1,12 @@
 {
-  "name": "fk.font.icons",
-  "description": "FK Font Icons",  
+  "name": "tf.font.icons",
+  "description": "TF Font Icons",  
   "authors": [
     "Thiago Franchin"
   ],
   "license": "ISC",
   "keywords": [
+    "TF",
     "FK", 
     "ux",
     "fonts",
@@ -14,7 +15,7 @@
     "guide",
     "styleguide"
   ],
-  "homepage": "https://github.com/thiagofranchin/fk-font-icons",
+  "homepage": "https://github.com/thiagofranchin/tf-font-icons",
   "ignore": [
     "**/.*",
     "node_modules",

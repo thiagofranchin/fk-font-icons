@@ -1,0 +1,236 @@
+@font-face {
+	font-family: "tf-font-icons";
+	src: url('#{$tf-icons-font-path}tf-font-icons.eot');
+	src: url('#{$tf-icons-font-path}tf-font-icons.eot?#iefix') format('eot'),
+		url('#{$tf-icons-font-path}tf-font-icons.woff2') format('woff2'),
+		url('#{$tf-icons-font-path}tf-font-icons.woff') format('woff'),
+		url('#{$tf-icons-font-path}tf-font-icons.ttf') format('truetype'),
+		url('#{$tf-icons-font-path}tf-font-icons.svg#tf-font-icons') format('svg');
+}
+
+@mixin tf-styles {
+	font-family: "tf-font-icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%tf {
+	@include tf-styles;
+}
+
+@function tf-char($filename) {
+	$char: "";
+
+	@if $filename == fk {
+		$char: "\E001";
+	}
+	@if $filename == search {
+		$char: "\E002";
+	}
+	@if $filename == github {
+		$char: "\E003";
+	}
+	@if $filename == desktop {
+		$char: "\E004";
+	}
+	@if $filename == chevron-light-up {
+		$char: "\E005";
+	}
+	@if $filename == pin {
+		$char: "\E006";
+	}
+	@if $filename == instagram-o {
+		$char: "\E007";
+	}
+	@if $filename == twitter {
+		$char: "\E008";
+	}
+	@if $filename == facebook {
+		$char: "\E009";
+	}
+	@if $filename == linkedin {
+		$char: "\E00A";
+	}
+	@if $filename == rss {
+		$char: "\E00B";
+	}
+	@if $filename == heart-o {
+		$char: "\E00C";
+	}
+	@if $filename == dna {
+		$char: "\E00D";
+	}
+	@if $filename == tecno {
+		$char: "\E00E";
+	}
+	@if $filename == heart-circle-o {
+		$char: "\E00F";
+	}
+	@if $filename == person-circle-o {
+		$char: "\E010";
+	}
+	@if $filename == comments-circle-o {
+		$char: "\E011";
+	}
+	@if $filename == heart-hands-circle-o {
+		$char: "\E012";
+	}
+	@if $filename == clipboard-circle-o {
+		$char: "\E013";
+	}
+	@if $filename == check-shield-circle-o {
+		$char: "\E014";
+	}
+	@if $filename == accessibility-circle {
+		$char: "\E015";
+	}
+	@if $filename == grandparents-circle-o {
+		$char: "\E016";
+	}
+	@if $filename == nuclear-circle-o {
+		$char: "\E017";
+	}
+	@if $filename == bullhorn-circle-o {
+		$char: "\E018";
+	}
+	@if $filename == ask-circle-o {
+		$char: "\E019";
+	}
+	@if $filename == heart-pulse-circle-o {
+		$char: "\E01A";
+	}
+	@if $filename == person-comment-circle-o {
+		$char: "\E01B";
+	}
+	@if $filename == id-circle-o {
+		$char: "\E01C";
+	}
+	@if $filename == heart-hand-circle-o {
+		$char: "\E01D";
+	}
+	@if $filename == hand-coin-circle-o {
+		$char: "\E01E";
+	}
+	@if $filename == file-circle-o {
+		$char: "\E01F";
+	}
+	@if $filename == no-smoke-circle-o {
+		$char: "\E020";
+	}
+
+	@return $char;
+}
+
+@mixin tf($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %tf;
+		} @else {
+			@include tf-styles;
+		}
+		content: tf-char($filename);
+	}
+}
+
+.tf-fk {
+	@include tf(fk);
+}
+.tf-search {
+	@include tf(search);
+}
+.tf-github {
+	@include tf(github);
+}
+.tf-desktop {
+	@include tf(desktop);
+}
+.tf-chevron-light-up {
+	@include tf(chevron-light-up);
+}
+.tf-pin {
+	@include tf(pin);
+}
+.tf-instagram-o {
+	@include tf(instagram-o);
+}
+.tf-twitter {
+	@include tf(twitter);
+}
+.tf-facebook {
+	@include tf(facebook);
+}
+.tf-linkedin {
+	@include tf(linkedin);
+}
+.tf-rss {
+	@include tf(rss);
+}
+.tf-heart-o {
+	@include tf(heart-o);
+}
+.tf-dna {
+	@include tf(dna);
+}
+.tf-tecno {
+	@include tf(tecno);
+}
+.tf-heart-circle-o {
+	@include tf(heart-circle-o);
+}
+.tf-person-circle-o {
+	@include tf(person-circle-o);
+}
+.tf-comments-circle-o {
+	@include tf(comments-circle-o);
+}
+.tf-heart-hands-circle-o {
+	@include tf(heart-hands-circle-o);
+}
+.tf-clipboard-circle-o {
+	@include tf(clipboard-circle-o);
+}
+.tf-check-shield-circle-o {
+	@include tf(check-shield-circle-o);
+}
+.tf-accessibility-circle {
+	@include tf(accessibility-circle);
+}
+.tf-grandparents-circle-o {
+	@include tf(grandparents-circle-o);
+}
+.tf-nuclear-circle-o {
+	@include tf(nuclear-circle-o);
+}
+.tf-bullhorn-circle-o {
+	@include tf(bullhorn-circle-o);
+}
+.tf-ask-circle-o {
+	@include tf(ask-circle-o);
+}
+.tf-heart-pulse-circle-o {
+	@include tf(heart-pulse-circle-o);
+}
+.tf-person-comment-circle-o {
+	@include tf(person-comment-circle-o);
+}
+.tf-id-circle-o {
+	@include tf(id-circle-o);
+}
+.tf-heart-hand-circle-o {
+	@include tf(heart-hand-circle-o);
+}
+.tf-hand-coin-circle-o {
+	@include tf(hand-coin-circle-o);
+}
+.tf-file-circle-o {
+	@include tf(file-circle-o);
+}
+.tf-no-smoke-circle-o {
+	@include tf(no-smoke-circle-o);
+}

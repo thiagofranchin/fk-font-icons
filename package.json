@@ -1,14 +1,15 @@
 {
   "name": "fk-font-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fk Icons",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thiagofranchin/fk-font-icons.git"
+    "url": "git+https://github.com/thiagofranchin/tf-font-icons.git"
   },
   "keywords": [
     "icons",
+    "tf",
     "fk"
   ],
   "devDependencies": {
@@ -28,7 +29,7 @@
   "author": "Thiago Franchin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/thiagofranchin/fk-font-icons/issues"
+    "url": "https://github.com/thiagofranchin/tf-font-icons/issues"
   },
-  "homepage": "https://github.com/thiagofranchin/fk-font-icons#readme"
+  "homepage": "https://github.com/thiagofranchin/tf-font-icons#readme"
 }
