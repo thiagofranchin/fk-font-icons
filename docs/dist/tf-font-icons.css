@@ -148,3 +148,39 @@
 .tf-no-smoke-circle-o:before {
 	content: "\E020";
 }
+
+.tf-puzzle:before {
+	content: "\E021";
+}
+
+.tf-cam-o:before {
+	content: "\E022";
+}
+
+.tf-graph-o:before {
+	content: "\E023";
+}
+
+.tf-file-o:before {
+	content: "\E024";
+}
+
+.tf-book-o:before {
+	content: "\E025";
+}
+
+.tf-pin-o:before {
+	content: "\E026";
+}
+
+.tf-instagram-circle:before {
+	content: "\E027";
+}
+
+.tf-facebook-circle:before {
+	content: "\E028";
+}
+
+.tf-pointer-circle:before {
+	content: "\E029";
+}

@@ -123,6 +123,33 @@
 	@if $filename == no-smoke-circle-o {
 		$char: "\E020";
 	}
+	@if $filename == puzzle {
+		$char: "\E021";
+	}
+	@if $filename == cam-o {
+		$char: "\E022";
+	}
+	@if $filename == graph-o {
+		$char: "\E023";
+	}
+	@if $filename == file-o {
+		$char: "\E024";
+	}
+	@if $filename == book-o {
+		$char: "\E025";
+	}
+	@if $filename == pin-o {
+		$char: "\E026";
+	}
+	@if $filename == instagram-circle {
+		$char: "\E027";
+	}
+	@if $filename == facebook-circle {
+		$char: "\E028";
+	}
+	@if $filename == pointer-circle {
+		$char: "\E029";
+	}
 
 	@return $char;
 }
@@ -233,4 +260,31 @@
 }
 .tf-no-smoke-circle-o {
 	@include tf(no-smoke-circle-o);
+}
+.tf-puzzle {
+	@include tf(puzzle);
+}
+.tf-cam-o {
+	@include tf(cam-o);
+}
+.tf-graph-o {
+	@include tf(graph-o);
+}
+.tf-file-o {
+	@include tf(file-o);
+}
+.tf-book-o {
+	@include tf(book-o);
+}
+.tf-pin-o {
+	@include tf(pin-o);
+}
+.tf-instagram-circle {
+	@include tf(instagram-circle);
+}
+.tf-facebook-circle {
+	@include tf(facebook-circle);
+}
+.tf-pointer-circle {
+	@include tf(pointer-circle);
 }
